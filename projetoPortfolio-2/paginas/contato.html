@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../estilos/layout.css">
+        <link rel="stylesheet" href="../estilos/form.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&display=swap" rel="stylesheet">
+        <script src="../scripts/dados.js" defer></script>
+        <title>Flaarte</title>
+    </head>
+    <body>
+        <header>
+            <img id="logo" src="../imagens/logo/flaarte.png.png" alt="Flaarte">
+            <nav>
+                <ul id="lista01">
+                    <li class="line"><a href="../index.html">Biografia</a></li>
+                    <li class="line"> <a href="../paginas/artes.html">Obras</a>
+                        <ul>
+                            <li><a href="../paginas/animais.html">Animais</a></li>
+                            <li><a href="../paginas/paisagens.html">Paisagens</a></li>
+                        </ul>
+                    </li>
+                    <li class="line"><a href="../paginas/contato.html">Contato</a></li>
+                </ul>  
+            </nav>
+        </header>
+        <main>
+            <section id="secao2">
+                <h2 class="p1">Contato</h2>
+                <br>
+                <p id="p1">Preenchido!</p>
+                <form action="../index.html" id="form">
+                    <fieldset>
+                        <legend>Preencha o formulário:</legend>
+                        <br>
+                            <label for="name"id="name2" >Nome:</label>
+                            <input type="text" id="name" >
+                            <br>
+                            <label for="idade">Idade:</label>
+                            <input type="number" id="idade" min="1" max="100">
+                            <br>
+                            <label for="email" id="email2">Email:</label>
+                            <input type="email" id="email">
+                            <br>
+                            <label for="telefone" id="telefone2">Celular:</label>
+                            <input type="tel" id="telefone" placeholder="(xx)(xxxxx)-(xxxx)" pattern="[0-9]{2}[0-9]{5}-[0-9]{4}">
+                            <br>
+                            <label for="data">Data:</label>
+                            <input type="month" id="data">
+                            <br>
+                            <label for="arte">Conhece sobre Arte?</label>
+                            <select name="arte" id="arte">
+                                <option value="">Selecione:</option>
+                                <option value="Sim">Sim</option>
+                                <option value="Não">Não</option>
+                            </select>
+                            <br>
+                            <textarea name="Mensagem" id="mensagens" cols="21" rows="2" placeholder="Mensagem:"></textarea>
+                            <br>
+                            <button type="submit" id="bt1">Enviar</button>
+                            <button type="reset">Limpar</button>
+                        <br>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p id="redes" class="rede">Copyright © 2023 Flaarte. Todos os direitos reservados.</p>
+            <article id="rodape">
+                <address>
+                    <p>&#x1F4DE<a href="#">(11)98319-5632</a></p>
+                    <p>&#x1F4E7<a href="#">flaarte@hotmail.com</a></p>
+                </address>
+                <address id="social">
+                    <a href="https://www.instagram.com/flaarte_arte/" target="_blank" rel="external"><img id="icon" src="../imagens/logo/instagram.png" alt="Instagram"></a>
+                    <a href="https://web.facebook.com/flavio.medeiros.52090" target="_blank" rel="external"><img id="icon" src="../imagens/logo/facebook.png" alt="facebook"></a>
+                </address>
+            </article>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,530 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cantarell';
+    list-style-type: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: green;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    height: 90px;
+}
+#logo{
+    height: 60px;
+    margin: 20px;
+    display: flex; 
+}
+
+nav ul {
+    display: inline-block;
+    background-color: green;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    position: relative;
+}
+
+nav ul ul {
+    left: 0;
+    display: none;
+    position: absolute;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    font-size: 20px;
+    padding: 30px;
+}
+
+nav ul ul li a{
+    display: inline-block;
+}
+
+.line:hover a{
+    width: 80px;
+    border: solid black;
+    background-color: #2E8B57;
+    text-align: center;
+    transition: all .3s;
+    font-weight: bold;
+    color: white;
+}
+
+
+nav ul li:hover ul{
+    display: block;
+    position: absolute;
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.principal{
+    display: flex;
+    flex-direction: row;
+}
+.p1{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: green;
+    font-size: 200%;
+}
+#p1{
+    margin-top: 10px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+section{
+    margin-top: 80px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    height: max-content;
+    background-color: white;
+    box-shadow: 15px 15px 20px gray;
+}
+
+.secao1{
+    height: max-content;
+    width: 95%;
+}
+.secao2{
+    height: max-content;
+    width: 95%;
+}
+#secao2{
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside{
+    width: 500px;
+    margin-left: 20px;
+}
+
+#dimensao{
+    height: 400px;
+    width: 600px;
+}
+#dimensao2{
+    height: 800px;
+}
+#dimensao02{
+    height: 600px;
+    width: 800px;
+}
+#dimensao21{
+    height: 800px;
+    width: 800px;
+}
+#dimensao3{
+    height: 700px;
+}
+#dimensao03{
+    height: 600px;
+    
+}
+#artista{
+    width: 500px;
+    height: 400px;
+}
+
+.figura2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+figcaption{
+    font-size: 120%;
+    font-weight: bold;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: green;
+    justify-content: space-around;
+    margin-top: 30px;
+    height: max-content;
+    width: 100%;
+    bottom: 0;
+}
+#rodape{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 3px;
+}
+#social{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+#redes{
+    color: black;
+    font-weight: bold;
+    font-size: 100%;
+}
+.rede{
+    margin-top: 25px;
+}
+#icon{
+    height: 30px;
+    margin: 5px;
+}
+
+
+.figura2{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+.pose {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+}
+.pose2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 15px;
+}
+.pose3{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+}
+
+#margem{
+    margin-left: 50px;
+}
+
+#margin{
+    margin-left: 280px;
+}
+
+
+@media (max-width: 767px){
+    body{
+        margin: 0;
+        padding: 0;
+        width: min-content;
+        font-family: 'Cantarell';
+        list-style-type: none;
+    }
+
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: green;
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+        height: 90px;
+    }
+
+    #logo{
+        height: 30px;
+        margin: 20px;
+        margin-left: 50px;
+        margin-right: 10px;
+        display: flex; 
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        align-items: center;
+    }
+
+    .principal{
+        display: flex;
+        flex-direction: column;
+        width: min-content;
+    }
+
+    video{
+        width: 200px;
+        height: 300;
+    }
+
+    #artista{
+        width: 300px;
+        height: 250px;
+    }
+    
+    section{
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: min-content;
+        height: max-content;
+        background-color: white;
+    }
+
+    #secao2{
+        height: max-content;
+        display: flex;
+        width: max-content;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secao2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: max-content;
+        width: min-content;
+    }
+
+    article{
+        display: flex;
+        align-items: center;
+        width: min-content;
+        height: max-content;
+    }
+
+    nav ul {
+        display: inline-block;
+        background-color: green;
+        font-size: 10px;
+    }
+
+    nav #lista01{
+        margin-top: 15px;
+    }
+
+    nav ul li{
+        display: inline-block;
+        position: relative;
+    }
+    
+    nav ul ul {
+        display: none;
+        position: absolute;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        display: inline-block;
+        color: black;
+        font-size: 20px;
+        padding: 20px;
+    }
+    
+    nav ul ul li a{
+        display: inline-block;
+    }
+    
+    .line:hover a{
+        width: 80px;
+        border: solid black;
+        background-color: #2E8B57;
+        text-align: center;
+        transition: all .3s;
+        font-weight: bold;
+        color: white;
+    }
+    
+    nav ul li:hover ul{
+        display: block;
+        position: absolute;
+    
+    }
+
+    .secao1{
+        height: max-content;
+        width: max-content;
+    }
+
+    .p1{
+        margin-top: 20px;
+        color: green;
+        font-size: 200%;
+        margin-bottom: 20px;
+    }
+
+    .figura2{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    #dimensao{
+        height: 300px;
+        width: 450px;
+    }
+
+    #dimensao2{
+        height: 600px;
+        width: 500px;
+    }
+
+    #dimensao02{
+        height: 100px;
+        width: 200px;
+    }
+
+    #dimensao21{
+        height: 500px;
+        width: 500px;
+    }
+
+    #dimensao3{
+        height: 700px;
+        width: 500px;
+        padding: 10px;
+    }
+    #dimensao03{
+        height: 350px;
+        
+    }
+
+    #mensagens{
+        width: min-content;
+    }
+
+    aside{
+        justify-content: center;
+    }
+
+    #margem{
+        margin-left: 0;
+    }
+
+    .pose {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+
+    .pose2{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 15px;
+    }
+
+    .pose3{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        margin: 5px;
+    }
+
+    figcaption{
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        background-color: green;
+        justify-content: space-around;
+        margin-top: 30px;
+        height: max-content;
+        width: 100%;
+        bottom: 0;
+    }
+    
+
+    #rodape{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: max-content;
+        margin: 10px;
+
+    }
+
+    #social{
+        display: flex;
+        flex-direction: row;
+    }
+    #redes{
+        color: black;
+        font-weight: bold;
+        font-size: 83%;
+       
+    }
+    .rede{
+        margin-top: 10px;
+        margin: 50px;
+    }
+
+    #icon{
+        height: 20px;
+        margin: 5px;
+    }
+
+}
+/* 
+@media (max-width: 767px) {
+    .alinhamento {
+        width: 100%;
+        height: 450px;
+        margin: 10px 0;
+    }
+    section{
+        height: max-content;
+        width: max-content;
+    }
+} */
+/* figcaption{
+    font-family: arial;
+    text-align: center;
+} */
+/* section{
+    display: inline-block;
+    position: fixed;
+    background-color: #E0D4C8;
+    margin-bottom: 10px;
+    height: 400px;
+    width: 100%;
+} */
+
+/* cores: #FAECDE #E0D4C8 #B8AEA4 #7A746D #3B3734
+/* Dropdow
+    
+

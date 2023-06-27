@@ -1,0 +1,118 @@
+form{
+    width: max-content;
+    height: max-content;
+}
+input{
+    margin-bottom: 10px;
+}
+
+#name{
+    width: 140px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+#email{
+    width: 140px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+#telefone{
+    width: 130px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+#idade{
+    width: 140px;
+    border-radius: 5px;
+}
+#data{
+    width: 150px;
+    border-radius: 5px;
+}
+
+select{
+    border-radius: 5px;
+}
+
+textarea{
+    margin-top: 15px;
+    width: 300px;
+    height: 200px;
+}
+label{
+    font-family: 'Cantarell';
+    font-weight: bold;
+    font-size: 140%;
+    color: green;
+}
+
+legend {
+    font-family: 'Cantarell';
+    font-weight: bold;
+    font-size: 190%;
+    color: green;
+}
+
+fieldset{
+    height: max-content;
+    width: 500px;
+}
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    width: 130px;
+    margin: 5px;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+#p1{
+    display: none;
+    color: green;
+}
+@media(max-width: 767px){
+    fieldset{
+        height: max-content;
+        width: 400px;
+    }
+    label{
+        font-family: 'Cantarell';
+        font-weight: bold;
+        font-size: 100%;
+        color: green;
+    }
+    
+    legend {
+        font-family: 'Cantarell';
+        font-weight: bold;
+        font-size: 140%;
+        color: green;
+    }
+
+    #email{
+        width: 140px;
+        border-radius: 5px;
+        margin-left: 5px;
+    }
+
+    #telefone{
+        width: 125px;
+        border-radius: 5px;
+        margin-right: 5px;
+    }
+
+    textarea{
+        margin-top: 15px;
+        width: 200px;
+        height: 150px;
+    }
+    
+}
+
